@@ -9,7 +9,6 @@
 #
 # Normal rules (sorted alphabetically)
 #
-.*
 *.a
 *.bin
 *.bz2
@@ -128,3 +127,7 @@ kernel/configs/android-*.cfg
 # build
 out/
 *.zip
+
+*.cmd
+
+.config
