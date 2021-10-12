@@ -3,6 +3,7 @@ task:
   name: kernel
   environment:
     TG_BOT_TOKEN: "ENCRYPTED[4d8cc197f9f71d24a907afbd25ae4a5a9250e772f87d6e709c665af69ee259f84da054f67a78aaa4cfbdc0ecf3564af1]"
+    CIRRUS_CLONE_DEPTH: "1"
   build_script:
     - ./build
   container:
