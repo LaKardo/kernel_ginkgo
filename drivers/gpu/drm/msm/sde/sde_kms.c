@@ -1036,7 +1036,7 @@ static void sde_kms_commit(struct msm_kms *kms,
 	struct drm_crtc_state *old_crtc_state;
 	struct pm_qos_request req = {
 		.type = PM_QOS_REQ_AFFINE_CORES,
-		.cpus_affine = ATOMIC_INIT(BIT(smp_processor_id()))
+		.cpus_affine = BIT(smp_processor_id())
 	};
 	int i;
 
